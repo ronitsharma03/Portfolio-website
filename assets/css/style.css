@@ -933,8 +933,8 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 10px;
 }
@@ -972,6 +972,17 @@ main {
   background: transparent;
   z-index: 1;
   transition: var(--transition-1);
+}
+#experience-sec{
+  color: yellow;
+}
+.pending-skill{
+  color: yellow;
+}
+.dummy-image{
+  background-color: #303030;
+  width: 300px;
+  height: 110px;
 }
 
 .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }

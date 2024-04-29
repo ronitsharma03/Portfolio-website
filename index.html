@@ -274,7 +274,7 @@
         -->
 
         <section class="testimonials">
-          <h3 class="h3 testimonials-title">Teammates</h3>
+          <h3 class="h3 testimonials-title">Teammetes</h3>
 
           <ul class="testimonials-list has-scrollbar">
             <li class="testimonials-item">
@@ -288,17 +288,7 @@
                 </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p> <!--
-                      - testimonials modal
-                    -->
-
-
-
-                    <!--
-                      - clients
-                    -->
-
-
+                  <p>
                     Ronit, a stellar teammate, is always there to lend a
                     helping hand. His support make collaboration
                     a breeze, fostering a positive and productive work
@@ -357,6 +347,7 @@
                 </div>
               </div>
             </li>
+
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
                 <figure class="testimonials-avatar-box">
@@ -370,7 +361,8 @@
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
                     With Ronit, we've conquered LeetCode
-                    challenges, solving intricate problems together. Our collaborative efforts extend
+                    challenges, solving intricate problems together. Our collaborative efforts
+                    extend
                     beyond coding platforms, creating a dynamic duo that
                     tackles challenges with expertise and camaraderie.
                     Grateful for Ronit's assistance, we thrive as a team.
@@ -379,10 +371,52 @@
                 </div>
               </div>
             </li>
-
-
           </ul>
         </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  <!-- Richard was hired to create a corporate identity. We were
+                  very pleased with the work done. She has a lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum
+                  dolor sit amet, ullamcous cididt consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels
+                  dolore magnarels alia. -->
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--
+          - clients
+        -->
+
 
       </article>
 
@@ -407,19 +441,19 @@
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">
-                Rajiv Gandhi Proudyogiki Vishwavidyalaya
+                Bharati Vidyapeeth College of Engineering, PUNE
               </h4>
 
               <span>2021 — 2025</span>
 
               <p class="timeline-text">
-                Bachelor of Technology in Information Technology
+                Bachelors of Technology in INFORMATION TECHNOLOGY
               </p>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">
-                Excellence School
+                Govt. Higher Secondary School, Gho-Brahmana, J&K
               </h4>
 
               <span>2019 — 2021</span>
@@ -445,7 +479,7 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">A2Infotech Pvt. Ltd.</h4>
+              <!-- <h4 class="h4 timeline-item-title">A2Infotech Pvt. Ltd.</h4>
 
               <span>2023 — 2024</span>
 
@@ -454,11 +488,11 @@
                 Ltd., I gained valuable experience by actively contributing to software development projects.
                 Additionally, I acquired proficiency in Oracle Database, Swing Java UI, and Java Desktop Application
                 development, further enhancing my skill set.
-              </p>
+              </p> -->
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CodSoft</h4>
+              <!-- <h4 class="h4 timeline-item-title">CodSoft</h4>
 
               <span>2024 — 2024</span>
 
@@ -466,11 +500,11 @@
                 At Codsoft, I spearheaded the development of a Java-based desktop application for student management,
                 showcasing proficiency in software design and contributing to the enhancement of administrative
                 processes.
-              </p>
+              </p> -->
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Development</h4>
+              <!-- <h4 class="h4 timeline-item-title">Web Development</h4>
 
               <span>2023 — 2023</span>
 
@@ -478,16 +512,18 @@
                 At Bharat Intern, successfully delivered two projects utilizing HTML, CSS, and incorporating elements of
                 JavaScript, demonstrating proficiency in front-end web development and a keen understanding of user
                 interface design.
-              </p>
+              </p> -->
             </li>
+            <h3 id="experience-sec">Updating Soon !</h3>
           </ol>
         </section>
 
         <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
+          <!-- <!-- <h3 class="h3 skills-title">My skills</h3> -->
 
           <ul class="skills-list content-card">
-            <li class="skills-item">
+            <h3 class="pending-skill">Updating Soon !</h3>
+            <!-- <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Front-end</h5>
                 <data value="80">80%</data>
@@ -529,7 +565,7 @@
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%"></div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </article>
@@ -564,64 +600,119 @@
 
           <div class="filter-select-box">
             <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
-              </div>
+                <div class="select-value" data-selecct-value>
+                    Select category
+                </div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
             </button>
 
             <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item>Web design</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item>Applications</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item>Web development</button>
+                </li>
             </ul>
-          </div>
+        </div>
 
           <ul class="project-list">
             <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://yopay-wallet.vercel.app" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                  <img src="./assets/images/project-1.png" alt="Paytm like wallet" loading="lazy" />
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Yopay Wallet</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Fullstack Website</p>
               </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://snapstore-project.vercel.app" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/snapstore-ecom.png" loading="lazy" />
+
+                </figure>
+
+                <h3 class="project-title">Snapstore Ecommerce Website</h3>
+
+                <p class="project-category">Fullstack Website</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="https://dukaan-ui-code.vercel.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/dukaanui.png" alt="Dukaan UI" loading="lazy" />
+                  
+                </figure>
+
+                <h3 class="project-title">Dukaan App UI</h3>
+
+                <p class="project-category">Web design</p>
+              </a>
+            </li>
+
+            
+
+            
+<!--
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
+                  <img src="./assets/images/"" alt="" loading="lazy" />
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Coming soon !</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+ 
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/" alt="" loading="lazy" />
+                  <div class="dummy-image"></div>
+                </figure>
+
+                <h3 class="project-title">Coming soon !</h3>
+
+                <p class="project-category">Web design</p>
               </a>
             </li>
 
@@ -632,12 +723,30 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
+                  <img src="./assets/images/" alt="" loading="lazy" />
+                  <div class="dummy-image"></div>
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Coming soon !</h3>
 
                 <p class="project-category">Web design</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="" loading="lazy" />
+                  <div class="dummy-image"></div>
+                </figure>
+
+                <h3 class="project-title"></h3>
+
+                <p class="project-category">Web development</p>
               </a>
             </li>
 
@@ -648,94 +757,32 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
+                  <img src="./assets/images/" alt="" loading="lazy" />
+                  <div class="dummy-image"></div>
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Coming soon !</h3>
 
                 <p class="project-category">Applications</p>
               </a>
-            </li>
+            </li> -->
 
-            <li class="project-item active" data-filter-item data-category="web design">
+            <!-- <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
+                  <img src="./assets/images/" alt="" loading="lazy" />
+                  <div class="dummy-image"></div>
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title"></h3>
 
                 <p class="project-category">Web development</p>
               </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+            </li> -->
           </ul>
         </section>
       </article>
@@ -751,8 +798,10 @@
 
         <section class="blog-posts">
           <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
+             <li class="blog-post-item">
+              <h3 class="pending-skill">Coming Soon !</h3>
+              </li>
+             <!-- <a href="#">
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
                 </figure>
@@ -907,7 +956,7 @@
                   </p>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </section>
       </article>
