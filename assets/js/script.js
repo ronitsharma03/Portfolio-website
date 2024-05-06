@@ -76,7 +76,7 @@ for (let i = 0; i < selectItems.length; i++) {
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
-const filterFunc = function(selectedValue) {
+const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
@@ -125,6 +125,44 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.setAttribute("disabled", "");
     }
   });
+}
+
+window.onload = () => {
+  (async function() {
+    await emailjs.init({
+      publicKey: "xLHttFLEiXnrDqyje",
+    });
+    console.log("Emailjs is ready")
+  })();
+  
+}
+
+async function sendEmail() {
+
+  document.getElementById("contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+  })
+
+  let params = {
+    fullname: document.getElementById("sender_fullname").value,
+    email: document.getElementById("sender_email").value,
+    message: document.getElementById("sender_message").value
+  };
+  console.log(params);
+
+  let serviceId = "service_f5uprrr";
+  let templateId = "template_3rtsvnp";
+
+  await emailjs.send(serviceId, templateId, params)
+    .then(response => {
+      alert("Message sent successfully!");
+      console.log(response);
+    }).catch(e => {
+      alert("Failed to send!");
+      console.log(e);
+    });
+  // document.getElementById("contact-form").reset();
+  window.location.href = "/";
 }
 
 

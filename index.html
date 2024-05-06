@@ -8,6 +8,12 @@
   <title>Ronit Khajuria Portfolio</title>
 
   <!--
+    Emailjs cdn
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+  <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
@@ -42,7 +48,7 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Ronit Khajuria</h1>
+          <h1 class="name" title="Ronit Khajuria">Ronit Khajuria</h1>
 
           <p class="title">
             Full Stack Developer 💻 <br />
@@ -190,7 +196,8 @@
           </p>
 
           <p>
-            Targeting Fullstack Developer roles with an organization of high repute with a scope of improving knowledge and further career growth. Ready for the challenges ahead, I'm committed
+            Targeting Fullstack Developer roles with an organization of high repute with a scope of improving knowledge
+            and further career growth. Ready for the challenges ahead, I'm committed
             to leaving a lasting mark in the dynamic realm of technology.
           </p>
 
@@ -517,10 +524,12 @@
 
           <ul class="skills-list content-card">
             <div class="resume-btn">
-              <a download="resume" class="pending-skill" href="https://drive.google.com/file/d/1suOlky9jLR61pOkrDO6-wPhJPJ_dVjQN/view?usp=sharing" target="_blank">Download Resume</a>
-              
+              <a download="resume" class="pending-skill"
+                href="https://drive.google.com/file/d/1suOlky9jLR61pOkrDO6-wPhJPJ_dVjQN/view?usp=sharing"
+                target="_blank">Download Resume</a>
+
             </div>
-            
+
             <!-- <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Front-end</h5>
@@ -973,29 +982,24 @@
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form id="contact-form" class="form" data-form>
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+              <input type="text" id="sender_fullname" name="fullname" class="form-input" placeholder="Full name"
+                required data-form-input />
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required
+              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required
                 data-form-input />
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <div class="send-coffee">
-              <button class="form-btn" type="submit" data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-              <!-- <div class="from-btn-2">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-                  data-name="bmc-button" data-slug="devxronit" data-color="#1e1e1f" data-emoji="☕" data-font="Comic"
-                  data-text="" data-outline-color="#ffffff" data-font-color="#febd5d"
-                  data-coffee-color="#FFDD00"></script>
-                  Buy me a coffee
-              </div> -->
+            <textarea name="message" id="sender_message" class="form-input" placeholder="Your Message" required
+              data-form-input></textarea>
 
-            </div>
+            <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" data-form-btn value="Send">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+
           </form>
         </section>
       </article>
