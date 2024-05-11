@@ -976,10 +976,18 @@ main {
 #experience-sec{
   color: yellow;
 }
+.position-ex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 .resume-btn{
   display: flex;
   justify-content: center;
-
+  /* border: 2px solid rgb(161, 161, 22);
+  padding: 20px;
+  border-radius: 20px;
+  width: 35%; */
 }
 .pending-skill{
   list-style: none;
