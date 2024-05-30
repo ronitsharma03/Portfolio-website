@@ -128,13 +128,13 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 window.onload = () => {
-  (async function() {
+  (async function () {
     await emailjs.init({
       publicKey: "xLHttFLEiXnrDqyje",
     });
     console.log("Emailjs is ready")
   })();
-  
+
 }
 
 async function sendEmail() {
@@ -143,26 +143,29 @@ async function sendEmail() {
     e.preventDefault();
   })
 
-  let params = {
-    fullname: document.getElementById("sender_fullname").value,
-    email: document.getElementById("sender_email").value,
-    message: document.getElementById("sender_message").value
-  };
-  console.log(params);
+    let params = {
+      fullname: document.getElementById("sender_fullname").value,
+      email: document.getElementById("sender_email").value,
+      message: document.getElementById("sender_message").value
+    };
+    console.log(params);
+    localStorage.setItem("name", params.fullname);
+    localStorage.setItem("email", params.email);
 
-  let serviceId = "service_f5uprrr";
-  let templateId = "template_3rtsvnp";
+    let serviceId = "service_f5uprrr";
+    let templateId = "template_3rtsvnp";
 
-  await emailjs.send(serviceId, templateId, params)
-    .then(response => {
-      alert("Message sent successfully!");
-      console.log(response);
-    }).catch(e => {
-      alert("Failed to send!");
-      console.log(e);
-    });
-  // document.getElementById("contact-form").reset();
-  window.location.href = "/";
+    await emailjs.send(serviceId, templateId, params)
+      .then(response => {
+        alert("Message sent successfully!");
+        console.log(response);
+      }).catch(e => {
+        alert("Failed to send!");
+        console.log(e);
+      });
+    window.location.href = "/";
+  
+ 
 }
 
 
