@@ -1001,16 +1001,16 @@
               <input type="text" id="sender_fullname" name="fullname" class="form-input" placeholder="Full name"
                 required data-form-input />
 
-              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required
-                data-form-input />
+              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required data-form-input />
             </div>
 
             <textarea name="message" id="sender_message" class="form-input" placeholder="Your Message" required
               data-form-input></textarea>
 
-            <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" data-form-btn value="Send">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" value="Send">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span id="btn_text">Send Message</span>
+                <div id="loader" class="loader hidden"></div>
             </button>
 
 
@@ -1028,7 +1028,9 @@
   <!--
     - ionicon link
   -->
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devxronit" data-description="Support me on Buy me a coffee!" data-message="Thanks for visiting. You can now buy me a coffee from here!" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devxronit" data-description="Support me on Buy me a coffee" data-color="#fdc663" draggable="false" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

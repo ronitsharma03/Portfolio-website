@@ -137,35 +137,100 @@ window.onload = () => {
 
 }
 
-async function sendEmail() {
 
+async function sendEmail() {
   document.getElementById("contact-form").addEventListener("submit", (e) => {
     e.preventDefault();
   })
 
-    let params = {
-      fullname: document.getElementById("sender_fullname").value,
-      email: document.getElementById("sender_email").value,
-      message: document.getElementById("sender_message").value
-    };
-    console.log(params);
-    localStorage.setItem("name", params.fullname);
-    localStorage.setItem("email", params.email);
+  const button = document.getElementById('send_btn');
+  const btnText = document.getElementById('btn_text');
+  const loader = document.getElementById('loader');
 
-    let serviceId = "service_f5uprrr";
-    let templateId = "template_3rtsvnp";
+  // Disable the button and show the loader
+  button.disabled = true;
+  btnText.textContent = 'Sending...';
+  loader.classList.remove('hidden');
 
-    await emailjs.send(serviceId, templateId, params)
-      .then(response => {
-        alert("Message sent successfully!");
-        console.log(response);
-      }).catch(e => {
-        alert("Failed to send!");
-        console.log(e);
-      });
-    window.location.href = "/";
-  
- 
+  const fullname = document.getElementById('sender_fullname').value.trim();
+  const email = document.getElementById('sender_email').value.trim();
+  const message = document.getElementById('sender_message').value.trim();
+
+  if (!fullname || !email || !message) {
+    showToast('Please fill in all fields.', 'error');
+    button.disabled = false;
+    btnText.textContent = 'Send Message';
+    loader.classList.add('hidden');
+    return;
+  }
+
+  if (!validateEmail(email)) {
+    showToast('Please enter a valid email address.', 'error');
+    button.disabled = false;
+    btnText.textContent = 'Send Message';
+    loader.classList.add('hidden');
+    return;
+  }
+
+  const params = {
+    fullname: fullname,
+    email: email,
+    message: message
+  };
+
+  const serviceId = "service_f5uprrr";
+  const templateId = "template_3rtsvnp";
+
+  try {
+    const response = await emailjs.send(serviceId, templateId, params);
+    showToast("Message sent successfully!", 'success');
+    console.log(response);
+  } catch (e) {
+    showToast("Failed to send message!", 'error');
+    console.log(e);
+  }
+
+  // Reset button and loader
+  button.disabled = false;
+  btnText.textContent = 'Send Message';
+  loader.classList.add('hidden');
+}
+
+
+function showToast(message, type) {
+  let backgroundColor;
+  if (type === 'success') {
+    backgroundColor = 'linear-gradient(to right, #FDC663, #ffc371)';
+  } else if (type === 'error') {
+    backgroundColor = 'linear-gradient(to right, #FDC663, #ffc371)';
+  }
+
+  Toastify({
+    text: message,
+    duration: 3000,
+    id: "send",
+    gravity: "top",
+    position: "center",
+    stopOnFocus: true,
+    style: {
+      background: backgroundColor,
+      borderRadius: "0px 0px 5px 5px",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      color: "#030303",
+      fontSize: "18px",
+      maxWidth: "60%",
+      padding: "10px 20px",
+      wordBreak: "break-word",
+      margin: "0 auto",
+      textAlign: "center"
+    },
+    className: 'toastify-fixed'
+  }).showToast();
+}
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(String(email).toLowerCase());
 }
 
 

@@ -139,6 +139,39 @@ button {
   cursor: pointer;
 }
 
+.toastify-fixed {
+  position: fixed !important;
+  top: 20px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999; /* Ensure it is above other elements */
+}
+
+
+.form-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.hidden {
+  display: none;
+}
+
 input, textarea {
   display: block;
   width: 100%;
