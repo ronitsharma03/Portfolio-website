@@ -1235,6 +1235,40 @@ textarea.form-input {
   margin-bottom: 25px;
 }
 
+/* calendly-link style */
+.calendly-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+.calendly-btn:hover { background: var(--bg-gradient-yellow-1); }
+.calendly-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.calendly-btn{
+  position: relative;
+  display: flex;
+  gap: 10px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+.calendly-link{
+  text-decoration: none;
+  color: #FEBF5F;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 textarea.form-input::-webkit-resizer { display: none; }
 
 .form-input:focus:invalid { border-color: var(--bittersweet-shimmer); }

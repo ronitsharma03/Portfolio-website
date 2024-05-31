@@ -12,7 +12,9 @@
   -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <!-- Calendly badge widget end -->
   <!--
     - favicon
   -->
@@ -204,6 +206,16 @@
           <p>
             Fun Fact : Web3 really fascinates me !
           </p>
+          <!-- Calendly link widget begin -->
+          <div class="calendly-area">
+            <button class="calendly-btn">
+              <img src="./assets/images/calendar-symbol-svgrepo-com.svg" alt="design icon" width="25" />
+              <a class="calendly-link" href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/devxronit03/15min'}); return false; ">Schedule
+                1 : 1 with me</a>
+            </button>
+          </div>
+          <!-- Calendly link widget end -->
         </section>
 
         <!--
@@ -503,11 +515,13 @@
               <h4 class="h4 timeline-item-title">Girlscript Summer of Code</h4>
               <div class="position-ex">
                 <span>Open-source Contributor</span>
-                <span>May 2024 - present</span>    
+                <span>May 2024 - present</span>
               </div>
 
               <p class="timeline-text">
-                I'm currently participating in Girlscript Summer of Code as an open-source contributor. Right now, I'm working on issue #9 within the Examtime project on GitHub. This involves tackling the static likes count issue in the Notes Card feature.
+                I'm currently participating in Girlscript Summer of Code as an open-source contributor. Right now, I'm
+                working on issue #9 within the Examtime project on GitHub. This involves tackling the static likes count
+                issue in the Notes Card feature.
               </p>
             </li>
 
@@ -520,14 +534,14 @@
           <!-- <!-- <h3 class="h3 skills-title">My skills</h3> -->
 
           <!-- <ul class="skills-list content-card"> -->
-            <div class="resume-btn content-card">
-              <a download="resume" class="pending-skill"
-                href="https://drive.google.com/file/d/1MjaCCdvbHqxVTS8F5PD2HvN1FgoPfMmU/view?usp=sharing"
-                target="_blank">Download Full Resume</a>
+          <div class="resume-btn content-card">
+            <a download="resume" class="pending-skill"
+              href="https://drive.google.com/file/d/1MjaCCdvbHqxVTS8F5PD2HvN1FgoPfMmU/view?usp=sharing"
+              target="_blank">Download Full Resume</a>
 
-            </div>
+          </div>
 
-            <!-- <li class="skills-item">
+          <!-- <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Front-end</h5>
                 <data value="80">80%</data>
@@ -1001,20 +1015,20 @@
               <input type="text" id="sender_fullname" name="fullname" class="form-input" placeholder="Full name"
                 required data-form-input />
 
-              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input />
             </div>
 
             <textarea name="message" id="sender_message" class="form-input" placeholder="Your Message" required
               data-form-input></textarea>
 
-              <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" value="Send">
-                <ion-icon name="paper-plane"></ion-icon>
-                <span id="btn_text">Send Message</span>
-                <div id="loader" class="loader hidden"></div>
+            <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" value="Send">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span id="btn_text">Send Message</span>
+              <div id="loader" class="loader hidden"></div>
             </button>
-
-
           </form>
+
         </section>
       </article>
     </div>
@@ -1029,7 +1043,12 @@
     - ionicon link
   -->
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="devxronit" data-description="Support me on Buy me a coffee" data-message="Buy me a coffee!" data-color="#fdc663" draggable="false" data-x_margin="18" data-y_margin="18"></script>
+  <!-- Calendly scheduling widget -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="devxronit" data-description="Support me on Buy me a coffee" data-message="Buy me a coffee!"
+    data-color="#fdc663" draggable="false" data-x_margin="18" data-y_margin="18"></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
