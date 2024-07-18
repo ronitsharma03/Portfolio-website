@@ -254,3 +254,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+
+let screen = document.querySelector("#screen");
+let cursor = document.querySelector("#custom-cursor");
+screen.addEventListener("mousemove", function(dets){
+  cursor.style.left = dets.x + "px";
+  cursor.style.top = dets.y + "px";
+})

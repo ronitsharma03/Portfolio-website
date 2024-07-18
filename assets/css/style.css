@@ -1856,6 +1856,23 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 25px;
   }
 
+  /* Custom cursor implementation */
+  #screen{
+    position: relative;
+    overflow: hidden;
+  }
+
+  #custom-cursor{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #f8c16d;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all linear 0.2s;
+  }
+
 
 
   /**
