@@ -1,90 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronit Khajuria Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ronit Khajuria Portfolio</title>
-
-  <!--
+    <!--
     Emailjs cdn
   -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
-  <!-- Calendly link widget begin -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <!-- Calendly badge widget end -->
-  <!--
+    <!-- Calendly link widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <!-- Calendly badge widget end -->
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="screen">
-  <!--
+  <body>
+    <section id="screen">
+      <!--
     - #MAIN
   -->
 
-  <main>
-    
-    <div id="custom-cursor"></div>
-    <!--
+      <main>
+        <div id="custom-cursor"></div>
+        <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Ronit khajuria" width="80" />
-        </figure>
+        <aside class="sidebar" data-sidebar>
+          <div class="sidebar-info">
+            <figure class="avatar-box">
+              <img
+                src="./assets/images/my-avatar.png"
+                alt="Ronit khajuria"
+                width="80"
+              />
+            </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Ronit Khajuria">Ronit Khajuria</h1>
+            <div class="info-content">
+              <h1 class="name" title="Ronit Khajuria">Ronit Khajuria</h1>
 
-          <p class="title">
-            Full Stack Developer 💻 <br />
-            Java ☕ | Devops 🐳 <br />
-            Web3 🌐 | AWS 📦
-          </p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <p class="title">
+                Full Stack Developer 💻 <br />
+                Java ☕ | Devops 🐳 <br />
+                Web3 🌐 | AWS 📦
+              </p>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+            <button class="info_more-btn" data-sidebar-btn>
+              <span>Show Contacts</span>
 
-              <a href="mailto:ronitkhajuria03@gmail.com" class="contact-link">ronitkhajuria03@gmail.com</a>
-            </div>
-          </li>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+          </div>
 
-          <!-- <li class="contact-item">
+          <div class="sidebar-info_more">
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+
+                  <a
+                    href="mailto:ronitkhajuria03@gmail.com"
+                    class="contact-link"
+                    >ronitkhajuria03@gmail.com</a
+                  >
+                </div>
+              </li>
+
+              <!-- <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
@@ -96,120 +116,135 @@
             </div>
           </li> -->
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+                <div class="contact-info">
+                  <p class="contact-title">Birthday</p>
 
-              <time datetime="2003-07-03">July 03, 2003</time>
-            </div>
-          </li>
+                  <time datetime="2003-07-03">July 03, 2003</time>
+                </div>
+              </li>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
 
-              <address>Jammu, J&K, India</address>
-            </div>
-          </li>
-        </ul>
+                  <address>Jammu, J&K, India</address>
+                </div>
+              </li>
+            </ul>
 
-        <div class="separator"></div>
+            <div class="separator"></div>
 
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/ronit-khajuria-394609228/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+            <ul class="social-list">
+              <li class="social-item">
+                <a
+                  href="https://www.linkedin.com/in/ronit-khajuria-394609228/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
 
-          <li class="social-item">
-            <a href="https://twitter.com/devxronit" class="social-link" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com/devxronit"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
 
-          <li class="social-item">
-            <a href="https://leetcode.com/ronit_khajuria" class="social-link" target="_blank">
-              <ion-icon name="code-slash"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/ronitsharma03" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+              <li class="social-item">
+                <a
+                  href="https://leetcode.com/ronit_khajuria"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="code-slash"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://github.com/ronitsharma03"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-    <!--
+        <!--
       - #main-content
     -->
 
-    <div class="main-content">
-      <!--
+        <div class="main-content">
+          <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link>About</button>
+              </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Resume</button>
+              </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Portfolio</button>
+              </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Blog</button>
+              </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Contact</button>
+              </li>
+            </ul>
+          </nav>
 
-      <!--
+          <!--
         - #ABOUT
       -->
 
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <article class="about active" data-page="about">
+            <header>
+              <h2 class="h2 article-title">About me</h2>
+            </header>
 
-        <section class="about-text">
-          <p>
-            In my final year as a IT student and Full Stack Developer,
-            I've cultivated a passion for solving real-world problems through
-            code.
-          </p>
+            <section class="about-text">
+              <p>
+                In my final year as a IT student and Full Stack Developer, I've
+                cultivated a passion for solving real-world problems through
+                code.
+              </p>
 
-          <p>
-            Targeting Fullstack Developer roles with an organization of high repute with a scope of improving knowledge
-            and further career growth. Ready for the challenges ahead, I'm committed
-            to leaving a lasting mark in the dynamic realm of technology.
-          </p>
+              <p>
+                Targeting Fullstack Developer roles with an organization of high
+                repute with a scope of improving knowledge and further career
+                growth. Ready for the challenges ahead, I'm committed to leaving
+                a lasting mark in the dynamic realm of technology.
+              </p>
 
-          <p>
-            Fun Fact : Web3 really fascinates me !
-          </p>
-          <!-- Calendly link widget begin -->
-          <!-- <div class="calendly-area">
+              <p>Fun Fact : Web3 really fascinates me !</p>
+              <!-- Calendly link widget begin -->
+              <!-- <div class="calendly-area">
             <button class="calendly-btn">
               <img src="./assets/images/calendar-symbol-svgrepo-com.svg" alt="design icon" width="25" />
               <a class="calendly-link" href=""
@@ -217,83 +252,104 @@
                 1 : 1 with me</a>
             </button>
           </div> -->
-          <!-- Calendly link widget end -->
-        </section>
+              <!-- Calendly link widget end -->
+            </section>
 
-        <!--
+            <!--
           - service
         -->
 
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <section class="service">
+              <h3 class="h3 service-title">What i'm doing</h3>
 
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/sitemap-icon.svg" alt="mobile app icon" width="40" />
-              </div>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/sitemap-icon.svg"
+                      alt="mobile app icon"
+                      width="40"
+                    />
+                  </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Structures & Algorithms</h4>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">
+                      Data Structures & Algorithms
+                    </h4>
 
-                <p class="service-item-text">
-                  Enhancing problem solving skills to find solutions for the real world problems in Tech. 💻
-                </p>
-              </div>
-            </li>
+                    <p class="service-item-text">
+                      Enhancing problem solving skills to find solutions for the
+                      real world problems in Tech. 💻
+                    </p>
+                  </div>
+                </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
-              </div>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/icon-dev.svg"
+                      alt="Web development icon"
+                      width="40"
+                    />
+                  </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Fullstack development</h4>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Fullstack development</h4>
 
-                <p class="service-item-text">
-                  Architecting robust server-side solutions for seamless and
-                  scalable applications. 🔧
-                </p>
-              </div>
-            </li>
+                    <p class="service-item-text">
+                      Architecting robust server-side solutions for seamless and
+                      scalable applications. 🔧
+                    </p>
+                  </div>
+                </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/devops-2.svg" alt="design icon" width="40" />
-              </div>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/devops-2.svg"
+                      alt="design icon"
+                      width="40"
+                    />
+                  </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Devops</h4>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Devops</h4>
 
-                <p class="service-item-text">
-                  Architecting scalable and efficient system designs, harmonizing DevOps principles for seamless
-                  software deployment. 🚀
-                </p>
-              </div>
-            </li>
+                    <p class="service-item-text">
+                      Architecting scalable and efficient system designs,
+                      harmonizing DevOps principles for seamless software
+                      deployment. 🚀
+                    </p>
+                  </div>
+                </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/web-3-icon.svg" alt="camera icon" width="40" />
-              </div>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/web-3-icon.svg"
+                      alt="camera icon"
+                      width="40"
+                    />
+                  </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web 3</h4>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web 3</h4>
 
-                <p class="service-item-text">
-                  Crafting immersive Swing-based interfaces infused with blockchain flair, offering seamless
-                  interactions and decentralized experiences. 🌐
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
+                    <p class="service-item-text">
+                      Crafting immersive Swing-based interfaces infused with
+                      blockchain flair, offering seamless interactions and
+                      decentralized experiences. 🌐
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
-        <!--
+            <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+            <!-- <section class="testimonials">
           <h3 class="h3 testimonials-title">Teammates</h3>
 
           <ul class="testimonials-list has-scrollbar">
@@ -394,156 +450,167 @@
           </ul>
         </section> -->
 
-        <!--
+            <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
+            <div class="modal-container" data-modal-container>
+              <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+              <section class="testimonials-modal">
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
-              </figure>
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="80"
+                      data-modal-img
+                    />
+                  </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-            </div>
+                  <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+                </div>
 
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title></h4>
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title></h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+                  <time datetime="2021-06-14">14 June, 2021</time>
 
-              <div data-modal-text>
-                <p>
-                  <!-- Richard was hired to create a corporate identity. We were
+                  <div data-modal-text>
+                    <p>
+                      <!-- Richard was hired to create a corporate identity. We were
                   very pleased with the work done. She has a lot of experience
                   and is very concerned about the needs of client. Lorem ipsum
                   dolor sit amet, ullamcous cididt consectetur adipiscing
                   elit, seds do et eiusmod tempor incididunt ut laborels
                   dolore magnarels alia. -->
-                </p>
-              </div>
+                    </p>
+                  </div>
+                </div>
+              </section>
             </div>
-          </section>
-        </div>
 
-        <!--
+            <!--
           - clients
         -->
+          </article>
 
-
-      </article>
-
-      <!--
+          <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <article class="resume" data-page="resume">
+            <header>
+              <h2 class="h2 article-title">Resume</h2>
+            </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Bharati Vidyapeeth College of Engineering, PUNE
-              </h4>
-
-              <span>2021 — 2025</span>
-
-              <p class="timeline-text">
-                Bachelors of Technology in INFORMATION TECHNOLOGY
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Govt. Higher Secondary School, Gho-Brahmana, J&K
-              </h4>
-
-              <span>2019 — 2021</span>
-
-              <p class="timeline-text">
-                High school student with a focus on Physics, Chemistry, and Mathematics (PCM) subjects, dedicated to
-                academic excellence and aspiring towards a future in science and technology.
-              </p>
-            </li>
-
-
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Cognifyz Technologies</h4>
-              <div class="position-ex">
-                <span>Fullstack developer </span>
-                <span>May 2024 - June 2024</span>
+                <h3 class="h3">Education</h3>
               </div>
 
-              <p class="timeline-text">
-                During the internship, I focused on enhancing authentication robustness by implementing server-side
-                features like middlewares and Zod validation. Additionally, I integrated advanced API functionalities
-                such as rate limiting and error handling to make optimized systems. Moreover, I successfully integrated MongoDB and PostgreSQL for
-                database operations, including user authentication.
-              </p>
-            </li>
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Bharati Vidyapeeth College of Engineering, PUNE
+                  </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Girlscript Summer of Code</h4>
-              <div class="position-ex">
-                <span>Open-source Contributor</span>
-                <span>May 2024 - present</span>
+                  <span>2021 — 2025</span>
+
+                  <p class="timeline-text">
+                    Bachelors of Technology in INFORMATION TECHNOLOGY
+                  </p>
+                </li>
+
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Govt. Higher Secondary School, Gho-Brahmana, J&K
+                  </h4>
+
+                  <span>2019 — 2021</span>
+
+                  <p class="timeline-text">
+                    High school student with a focus on Physics, Chemistry, and
+                    Mathematics (PCM) subjects, dedicated to academic excellence
+                    and aspiring towards a future in science and technology.
+                  </p>
+                </li>
+              </ol>
+            </section>
+
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3">Experience</h3>
               </div>
 
-              <p class="timeline-text">
-                I'm currently participating in Girlscript Summer of Code as an open-source contributor. Right now, I'm
-                working on issue #9 within the Examtime project on GitHub. This involves tackling the static likes count
-                issue in the Notes Card feature.
-              </p>
-            </li>
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Cognifyz Technologies</h4>
+                  <div class="position-ex">
+                    <span>Fullstack developer </span>
+                    <span>May 2024 - June 2024</span>
+                  </div>
 
+                  <p class="timeline-text">
+                    During the internship, I focused on enhancing authentication
+                    robustness by implementing server-side features like
+                    middlewares and Zod validation. Additionally, I integrated
+                    advanced API functionalities such as rate limiting and error
+                    handling to make optimized systems. Moreover, I successfully
+                    integrated MongoDB and PostgreSQL for database operations,
+                    including user authentication.
+                  </p>
+                </li>
 
-            <!-- <h3 id="experience-sec">Updating Soon !</h3> -->
-          </ol>
-        </section>
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Girlscript Summer of Code
+                  </h4>
+                  <div class="position-ex">
+                    <span>Open-source Contributor</span>
+                    <span>May 2024 - present</span>
+                  </div>
 
-        <section class="skill">
-          <!-- <!-- <h3 class="h3 skills-title">My skills</h3> -->
+                  <p class="timeline-text">
+                    I'm currently participating in Girlscript Summer of Code as
+                    an open-source contributor. Right now, I'm working on issue
+                    #9 within the Examtime project on GitHub. This involves
+                    tackling the static likes count issue in the Notes Card
+                    feature.
+                  </p>
+                </li>
 
-          <!-- <ul class="skills-list content-card"> -->
-          <div class="resume-btn content-card">
-            <a download="resume" class="pending-skill"
-              href="https://drive.google.com/file/d/1MjaCCdvbHqxVTS8F5PD2HvN1FgoPfMmU/view?usp=sharing"
-              target="_blank">Download Full Resume</a>
+                <!-- <h3 id="experience-sec">Updating Soon !</h3> -->
+              </ol>
+            </section>
 
-          </div>
+            <section class="skill">
+              <!-- <!-- <h3 class="h3 skills-title">My skills</h3> -->
 
-          <!-- <li class="skills-item">
+              <!-- <ul class="skills-list content-card"> -->
+              <div class="resume-btn content-card">
+                <a
+                  download="resume"
+                  class="pending-skill"
+                  href="https://drive.google.com/file/d/1MjaCCdvbHqxVTS8F5PD2HvN1FgoPfMmU/view?usp=sharing"
+                  target="_blank"
+                  >Download Full Resume</a
+                >
+              </div>
+
+              <!-- <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Front-end</h5>
                 <data value="80">80%</data>
@@ -586,174 +653,219 @@
                 <div class="skill-progress-fill" style="width: 50%"></div>
               </div>
             </li> -->
-          <!-- </ul> -->
-        </section>
-      </article>
+              <!-- </ul> -->
+            </section>
+          </article>
 
-      <!--
+          <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+          <article class="portfolio" data-page="portfolio">
+            <header>
+              <h2 class="h2 article-title">Portfolio</h2>
+            </header>
 
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+            <section class="projects">
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <button class="active" data-filter-btn>All</button>
+                </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+                <li class="filter-item">
+                  <button data-filter-btn>Web design</button>
+                </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+                <li class="filter-item">
+                  <button data-filter-btn>Applications</button>
+                </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-          </ul>
+                <li class="filter-item">
+                  <button data-filter-btn>Web development</button>
+                </li>
+              </ul>
 
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
+              <div class="filter-select-box">
+                <button class="filter-select" data-select>
+                  <div class="select-value" data-selecct-value>
+                    Select category
+                  </div>
+
+                  <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="select-list">
+                  <li class="select-item">
+                    <button data-select-item>All</button>
+                  </li>
+
+                  <li class="select-item">
+                    <button data-select-item>Web design</button>
+                  </li>
+
+                  <li class="select-item">
+                    <button data-select-item>Applications</button>
+                  </li>
+
+                  <li class="select-item">
+                    <button data-select-item>Web development</button>
+                  </li>
+                </ul>
               </div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
+              <ul class="project-list">
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="https://taskwhiz.vercel.app" target="_blank">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+                      <img
+                        src="./assets/images/planify.png"
+                        alt="Task App"
+                        loading="lazy"
+                      />
+                    </figure>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
+                    <h3 class="project-title">TaskWhiz Task manager</h3>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
+                    <p class="project-category">Fullstack Application</p>
+                  </a>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-            </ul>
-          </div>
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="https://yopay-wallet.vercel.app" target="_blank">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://taskwhiz.vercel.app" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                      <img
+                        src="./assets/images/project-1.png"
+                        alt="Paytm like wallet"
+                        loading="lazy"
+                      />
+                    </figure>
 
-                  <img src="./assets/images/planify.png" alt="Task App" loading="lazy" />
-                </figure>
+                    <h3 class="project-title">Yopay Wallet</h3>
 
-                <h3 class="project-title">TaskWhiz Task manager</h3>
+                    <p class="project-category">Fullstack Application</p>
+                  </a>
+                </li>
 
-                <p class="project-category">Fullstack Application</p>
-              </a>
-            </li>
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="https://livepen.vercel.app/" target="_blank">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://yopay-wallet.vercel.app" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                      <img
+                        src="./assets/images/livepen.png"
+                        alt="livepen"
+                        loading="lazy"
+                      />
+                    </figure>
 
-                  <img src="./assets/images/project-1.png" alt="Paytm like wallet" loading="lazy" />
-                </figure>
+                    <h3 class="project-title">Livepen</h3>
 
-                <h3 class="project-title">Yopay Wallet</h3>
+                    <p class="project-category">Online Code Editor</p>
+                  </a>
+                </li>
 
-                <p class="project-category">Fullstack Application</p>
-              </a>
-            </li>
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a
+                    href="https://snapstore-project.vercel.app"
+                    target="_blank"
+                  >
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://livepen.vercel.app/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                      <img
+                        src="./assets/images/snapstore-ecom.png"
+                        loading="lazy"
+                      />
+                    </figure>
 
-                  <img src="./assets/images/livepen.png" alt="livepen" loading="lazy" />
+                    <h3 class="project-title">Snapstore Ecommerce Website</h3>
 
-                </figure>
+                    <p class="project-category">Fullstack Application</p>
+                  </a>
+                </li>
 
-                <h3 class="project-title">Livepen</h3>
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="https://todo-app-4wcr.onrender.com/" target="_blank">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-                <p class="project-category">Online Code Editor</p>
-              </a>
-            </li>
+                      <img
+                        src="./assets/images/todo.png"
+                        alt="Todo App"
+                        loading="lazy"
+                      />
+                    </figure>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://snapstore-project.vercel.app" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <h3 class="project-title">Todo App</h3>
 
-                  <img src="./assets/images/snapstore-ecom.png" loading="lazy" />
+                    <p class="project-category">Fullstack Application</p>
+                  </a>
+                </li>
 
-                </figure>
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web design"
+                >
+                  <a
+                    href="https://dukaan-app-ui-code.vercel.app/"
+                    target="_blank"
+                  >
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
 
-                <h3 class="project-title">Snapstore Ecommerce Website</h3>
+                      <img
+                        src="./assets/images/dukaanui.png"
+                        alt="Dukaan UI"
+                        loading="lazy"
+                      />
+                    </figure>
 
-                <p class="project-category">Fullstack Application</p>
-              </a>
-            </li>
+                    <h3 class="project-title">Dukaan App UI</h3>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://todo-app-4wcr.onrender.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <p class="project-category">Web design</p>
+                  </a>
+                </li>
 
-                  <img src="./assets/images/todo.png" alt="Todo App" loading="lazy" />
-
-                </figure>
-
-                <h3 class="project-title">Todo App</h3>
-
-                <p class="project-category">Fullstack Application</p>
-              </a>
-            </li>
-
-
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="https://dukaan-app-ui-code.vercel.app/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dukaanui.png" alt="Dukaan UI" loading="lazy" />
-
-                </figure>
-
-                <h3 class="project-title">Dukaan App UI</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-
-
-
-            <!--
+                <!--
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="#">
                 <figure class="project-img">
@@ -838,7 +950,7 @@
               </a>
             </li> -->
 
-            <!-- <li class="project-item active" data-filter-item data-category="web development">
+                <!-- <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -854,25 +966,25 @@
                 <p class="project-category">Web development</p>
               </a>
             </li> -->
-          </ul>
-        </section>
-      </article>
+              </ul>
+            </section>
+          </article>
 
-      <!--
+          <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <article class="blog" data-page="blog">
+            <header>
+              <h2 class="h2 article-title">Blog</h2>
+            </header>
 
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <h3 class="pending-skill">Coming Soon !</h3>
-            </li>
-            <!-- <a href="#">
+            <section class="blog-posts">
+              <ul class="blog-posts-list">
+                <li class="blog-post-item">
+                  <h3 class="pending-skill">Coming Soon !</h3>
+                </li>
+                <!-- <a href="#">
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
                 </figure>
@@ -1028,66 +1140,108 @@
                 </div>
               </a>
             </li> -->
-          </ul>
-        </section>
-      </article>
+              </ul>
+            </section>
+          </article>
 
-      <!--
+          <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <article class="contact" data-page="contact">
+            <header>
+              <h2 class="h2 article-title">Contact</h2>
+            </header>
 
+            <section class="contact-form">
+              <h3 class="h3 form-title">Contact Form</h3>
 
+              <form id="contact-form" class="form" data-form>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="sender_fullname"
+                    name="fullname"
+                    class="form-input"
+                    placeholder="Full name"
+                    required
+                    data-form-input
+                  />
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+                  <input
+                    type="email"
+                    id="sender_email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Email address"
+                    required
+                    data-form-input
+                  />
+                </div>
 
-          <form id="contact-form" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" id="sender_fullname" name="fullname" class="form-input" placeholder="Full name"
-                required data-form-input />
+                <textarea
+                  name="message"
+                  id="sender_message"
+                  class="form-input"
+                  placeholder="Your Message"
+                  required
+                  data-form-input
+                ></textarea>
 
-              <input type="email" id="sender_email" name="email" class="form-input" placeholder="Email address" required
-                data-form-input />
-            </div>
+                <button
+                  id="send_btn"
+                  onclick="sendEmail()"
+                  class="form-btn"
+                  type="submit"
+                  value="Send"
+                >
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span id="btn_text">Send Message</span>
+                  <div id="loader" class="loader hidden"></div>
+                </button>
+              </form>
+            </section>
+          </article>
+        </div>
+      </main>
 
-            <textarea name="message" id="sender_message" class="form-input" placeholder="Your Message" required
-              data-form-input></textarea>
-
-            <button id="send_btn" onclick="sendEmail()" class="form-btn" type="submit" value="Send">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span id="btn_text">Send Message</span>
-              <div id="loader" class="loader hidden"></div>
-            </button>
-          </form>
-
-        </section>
-      </article>
-    </div>
-  </main>
-
-  <!--
+      <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/script.js"></script>
 
-  <!--
+      <!--
     - ionicon link
   -->
-  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <!-- Calendly scheduling widget -->
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <!-- Calendly scheduling widget -->
+      <script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        type="text/javascript"
+        async
+      ></script>
 
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="devxronit" data-description="Support me on Buy me a coffee" data-message="Buy me a coffee!"
-    data-color="#fdc663" draggable="false" data-x_margin="18" data-y_margin="18"></script>
+      <script
+        data-name="BMC-Widget"
+        data-cfasync="false"
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="devxronit"
+        data-description="Support me on Buy me a coffee"
+        data-message="Buy me a coffee!"
+        data-color="#fdc663"
+        draggable="false"
+        data-x_margin="18"
+        data-y_margin="18"
+      ></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </section>
+  </body>
 </html>
